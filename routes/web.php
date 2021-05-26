@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TestController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +25,5 @@ Route::get('test/', function () {
 Route::redirect('/here', '/test');
 
 Route::view('/home', 'home', ['name'=>'Tamo', 'last_name'=>"Chantal" ]);
+
+Route::get ('index', [TestController::class, 'rendu']);
