@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('test/', function () {
     return view('test');
 });
+
+Route::redirect('/here', '/test');
+
+Route::view('/home', 'home', ['name'=>'Tamo', 'last_name'=>"Chantal" ]);
