@@ -32,4 +32,6 @@ Route::get ('main', [TestController::class, 'main']);
 
 Route::get ('article', [TestController::class, 'article']);
 
+Route::get('about',[TestController::class,'about']);
+
 

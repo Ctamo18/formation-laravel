@@ -23,4 +23,9 @@ class TestController extends Controller
     {
         return view ('article');
     }
+
+    public function about()
+    {
+        return view('pages.about');
+    }
 }
