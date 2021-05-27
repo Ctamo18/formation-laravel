@@ -13,4 +13,14 @@ class TestController extends Controller
             "last_name"=> " Chantal Calvine"
         ]);
     }
+
+    public function main ()
+    {
+        return view ('main');
+    }
+
+    public function article ()
+    {
+        return view ('article');
+    }
 }

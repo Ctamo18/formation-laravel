@@ -27,3 +27,9 @@ Route::redirect('/here', '/test');
 Route::view('/home', 'home', ['name'=>'Tamo', 'last_name'=>"Chantal" ]);
 
 Route::get ('index', [TestController::class, 'rendu']);
+
+Route::get ('main', [TestController::class, 'main']);
+
+Route::get ('article', [TestController::class, 'article']);
+
+
